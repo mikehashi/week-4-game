@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+<!-- Mike Hashimoto GT Bootcamp 5/18/2017 -->
+	<meta charset="utf-8">
+	<title>Crystal Collector</title>
+	
+	<!-- Bootstrap File -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+
+	<!-- JQuery File -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+
+  <!-- external JS game file -->
+  <script type="text/javascript" src="assets/javascript/game.js"></script>
+</head>
+<body>
+
+<!-- Overall Bootstrap Grid -->
+  <div class="container">
+
+<!-- Jumbotron with Title -->
+  	<div class="jumbotron">
+      <h1 class="text-center"><strong>Crystal Collector</strong></h1>
+      <hr>
+
+      <div class="text-center">
+      	<p>You will be given a random number at the start of the game.</p>
+      	<br>
+      	<p>There are four crystals below. By clicking on a crystal, you will add a specfic amount of points to your total score.</p>
+      	<br>
+      	<p>You win the game by matching your total score to a random number; you lose if your total score goes above the random number.</p>
+      	<br>
+      	<p>The value of each crystal is hidden from you until you click on it.</p>
+      	<br>
+      	<p>Each time the game starts, the values of each crystal will change.</p>
+      </div>
+
+    </div>
+
+  <!-- Row 1 -->
+    <div class="row">
+    	<!-- Left Panel for Rand Num -->
+      <div class="col-lg-6">
+
+    		  <div class="panel panel-default">
+
+      			<div class="panel-heading">
+      				<h3 class="panel-title">Score to Reach</h3>
+      			</div>
+
+      			<div class="panel-body">
+              		<div class="text-center">
+              			<h1 id="number-to-guess"></h1>
+              		</div>
+            </div>
+
+  		    </div>
+      </div>
+  
+  <!-- Right Panel for Wins Loss -->
+      <div class="col-lg-6">
+        <div class="row text-center">
+        		<h3>Wins: <span id="winner"></span></h3>
+        </div>
+        <div class="row text-center">
+        		<h3>Losses: <span id="loser"></span></h3>
+        </div>
+      </div>
+
+    </div>
+
+  <!-- Row 2 -->
+    <div class="row">
+    <!-- Images -->
+    	<div id="crystals" class="col-lg-6 text-center">
+       <img class= "imageCrystal" src="assets/images/blue.png">
+       <img class= "imageCrystal" src="assets/images/red.png">
+       <img class= "imageCrystal" src="assets/images/green.png">
+       <img class= "imageCrystal" src="assets/images/yellow.png">
+    	</div>
+    <!-- User Score -->
+    	<div class="col-lg-6">
+        <div class="panel panel-default">
+
+          <div class="panel-heading">
+            <h3 class="panel-title">Your Total Score</h3>
+          </div>
+
+          <div class="panel-body">
+            <div class="text-center">
+              <p>0</p>
+            </div>
+          </div>
+
+        </div>
+    	</div>
+    </div>
+
+  </div>
+
+</body>
+</html>
