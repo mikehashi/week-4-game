@@ -62,10 +62,10 @@
   <!-- Right Panel for Wins Loss -->
       <div class="col-lg-6">
         <div class="row text-center">
-        		<h3>Wins: <span id="winner"></span></h3>
+        		<h3>Wins: <span id="winner">0</span></h3>
         </div>
         <div class="row text-center">
-        		<h3>Losses: <span id="loser"></span></h3>
+        		<h3>Losses: <span id="loser">0</span></h3>
         </div>
       </div>
 
@@ -74,11 +74,11 @@
   <!-- Row 2 -->
     <div class="row">
     <!-- Images -->
-    	<div id="crystals" class="col-lg-6 text-center">
-       <img class= "imageCrystal" src="assets/images/blue.png">
-       <img class= "imageCrystal" src="assets/images/red.png">
-       <img class= "imageCrystal" src="assets/images/green.png">
-       <img class= "imageCrystal" src="assets/images/yellow.png">
+    	<div class="col-lg-6 text-center">
+       <img class= "imageCrystal" id= "crystalBlue" src="assets/images/blue.png">
+       <img class= "imageCrystal" id= "crystalRed" src="assets/images/red.png">
+       <img class= "imageCrystal" id= "crystalGreen" src="assets/images/green.png">
+       <img class= "imageCrystal" id= "crystalYellow" src="assets/images/yellow.png">
     	</div>
     <!-- User Score -->
     	<div class="col-lg-6">
@@ -90,7 +90,7 @@
 
           <div class="panel-body">
             <div class="text-center">
-              <p>0</p>
+              <h3><span id="totalScore">0</span></h3>
             </div>
           </div>
 
