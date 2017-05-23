@@ -41,6 +41,7 @@ $(document).ready(function() {
 		counter = 0;
 		targetNumber = Math.floor(Math.random()* (120) + 1);
 		$("#number-to-guess").text(targetNumber);
+		$("#totalScore").html(counter);
 		randomArray();	
 	}
 
